@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background: #fff0f6;
+  color: #81465f;
+}
+
+.main {
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+header {
+  padding: 55px 20px 35px;
+  background: linear-gradient(135deg, #ffb6d5, #ffe1ed, #f9d5ff);
+}
+
+.small {
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: #e44d91;
+  font-size: clamp(30px, 8vw, 52px);
+  margin: 20px 0;
+}
+
+.subtitle {
+  max-width: 450px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+button {
+  background: #e9579b;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #c9367c;
+  transform: scale(1.05);
+}
+
+.music-btn {
+  background: white;
+  color: #d9468c;
+}
+
+.hero {
+  max-width: 550px;
+  margin: 35px auto;
+  padding: 35px 22px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px #e88dbb44;
+}
+
+.flower {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.hero h2,
+.gallery h2,
+.letter-section h2 {
+  color: #df4e91;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  line-height: 1.9;
+}
+
+.surprise {
+  margin-top: 25px;
+  padding: 25px 15px;
+  border-radius: 20px;
+  background: #fff0f7;
+  animation: appear 0.5s ease;
+}
+
+.gallery {
+  padding: 40px 18px;
+  background: #ffe4ef;
+}
+
+.section-text {
+  margin-bottom: 25px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.photo-card {
+  padding: 10px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #d88eaf44;
+  transform: rotate(-2deg);
+}
+
+.photo-card:nth-child(2) {
+  transform: rotate(2deg);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.photo-card p {
+  padding: 12px 3px;
+  font-weight: bold;
+}
+
+.letter-section {
+  padding: 50px 18px;
+}
+
+.letter-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px #e88dbb44;
+}
+
+.envelope {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.letter-content {
+  margin-top: 25px;
+  padding: 20px;
+  background: #fff0f7;
+  border-radius: 18px;
+  line-height: 1.9;
+  animation: appear 0.5s ease;
+}
+
+.letter-content h3 {
+  color: #dc4e91;
+  margin-bottom: 15px;
+}
+
+footer {
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #ffb6d5, #f6d6ff);
+}
+
+footer h2 {
+  color: #d83d86;
+  margin-bottom: 12px;
+}
+
+.end {
+  margin-top: 15px;
+}
+
+.floating {
+  padding: 15px;
+  font-size: 23px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
+  .photo-card img {
+    height: 250px;
+  }
+
+  .hero {
+    margin: 20px 15px;
+  }
+}
+.tulip-garden {
+  padding: 55px 15px;
+  background: linear-gradient(180deg, #fff0f7, #ffd6e8, #ffeaf3);
+  border-radius: 30px;
+  margin: 25px 15px;
+  overflow: hidden;
+}
+
+.tulip-garden h2 {
+  color: #dc4e91;
+  margin-bottom: 15px;
+}
+
+.tulip-garden p {
+  line-height: 1.8;
+}
+
+.garden-flowers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 35px 0;
+}
+
+.garden-flowers span {
+  font-size: 42px;
+  animation: gardenFloat 2s infinite ease-in-out;
+}
+
+.garden-flowers span:nth-child(even) {
+  animation-delay: 0.5s;
+}
+
+.tulip-garden h3 {
+  color: #d9468c;
+}
+
+@keyframes gardenFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+.tulip-garden {
+  padding: 55px 15px;
+  background: linear-gradient(180deg, #fff0f7, #ffd6e8, #ffeaf3);
+  border-radius: 30px;
+  margin: 25px 15px;
+  overflow: hidden;
+}
+
+.tulip-garden h2 {
+  color: #dc4e91;
+  margin-bottom: 15px;
+}
+
+.tulip-garden p {
+  line-height: 1.8;
+}
+
+.garden-flowers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 35px 0;
+}
+
+.garden-flowers span {
+  font-size: 42px;
+  animation: gardenFloat 2s infinite ease-in-out;
+}
+
+.garden-flowers span:nth-child(even) {
+  animation-delay: 0.5s;
+}
+
+.tulip-garden h3 {
+  color: #d9468c;
+}
+
+@keyframes gardenFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+/* 🌷 TULIP GARDEN */
+
+.tulip-garden {
+  min-height: 450px;
+  padding: 50px 20px;
+  margin: 25px;
+  border-radius: 25px;
+  text-align: center;
+
+  background: linear-gradient(to bottom, #ffe4ec, #f8bbd0, #c8e6c9);
+
+  box-shadow: 0 8px 25px rgba(214, 51, 132, 0.2);
+}
+
+/* Tulip Flowers */
+
+.tulip {
+  display: inline-block;
+  font-size: 55px;
+  margin: 15px;
+
+  animation: gardenFloat 3s ease-in-out infinite;
+}
+
+.tulip:nth-child(even) {
+  animation-delay: 1s;
+}
+
+.tulip:nth-child(3n) {
+  animation-delay: 1.5s;
+}
+
+/* Flower Animation */
+
+@keyframes gardenFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+/* Garden Heading */
+
+.garden-text {
+  color: #ad1457;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .tulip-garden {
+    margin: 12px;
+    padding: 30px 10px;
+  }
+
+  .tulip {
+    font-size: 40px;
+    margin: 8px;
+  }
+
+  .garden-text {
+    font-size: 20px;
+  }
+}
+/* 🌷 BEAUTIFUL TULIP GARDEN */
+
+.tulip-garden {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  margin: 30px;
+  padding: 55px 20px;
+  text-align: center;
+  border-radius: 30px;
+
+  background:
+    radial-gradient(circle at 20% 20%, #fff0f6, transparent 40%),
+    linear-gradient(135deg, #f7c5dc, #e8c5f5, #c9f5d5);
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  box-shadow:
+    0 15px 40px rgba(190, 80, 140, 0.22),
+    inset 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+/* Garden Heading */
+
+.tulip-garden h2 {
+  color: #a83270;
+  font-size: 27px;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px #ffffff;
+}
+
+/* Garden Paragraph */
+
+.tulip-garden p {
+  color: #854568;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+/* Flowers */
+
+.tulip {
+  display: inline-block;
+  font-size: 65px;
+  margin: 12px;
+
+  filter: drop-shadow(0 7px 5px rgba(90, 50, 60, 0.2));
+
+  animation: tulipDance 3s ease-in-out infinite;
+}
+
+.tulip:nth-child(even) {
+  animation-delay: 0.7s;
+}
+
+.tulip:nth-child(3n) {
+  animation-delay: 1.3s;
+}
+
+/* Flower Animation */
+
+@keyframes tulipDance {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-7deg);
+  }
+
+  50% {
+    transform: translateY(-22px) rotate(7deg);
+  }
+}
+
+/* Blooming Text */
+
+.garden-text {
+  color: #a83270;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-shadow: 0 2px 8px white;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .tulip-garden {
+    margin: 15px;
+    padding: 35px 12px;
+  }
+
+  .tulip {
+    font-size: 45px;
+    margin: 7px;
+  }
+
+  .tulip-garden h2 {
+    font-size: 22px;
+  }
+}
+/* 🌷 TULIP GARDEN BACKGROUND PHOTO */
+
+.tulip-photo-section {
+  min-height: 550px;
+  margin: 30px;
+  padding: 50px 25px;
+  border-radius: 25px;
+
+  background-image:
+    linear-gradient(rgba(40, 15, 30, 0.25), rgba(40, 15, 30, 0.35)),
+    url("/photos/tulip-garden.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* TEXT ON PHOTO */
+
+.tulip-photo-section h2 {
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 8px #63304b;
+  margin-bottom: 20px;
+}
+
+.tulip-photo-section h3 {
+  color: white;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.tulip-photo-section p {
+  color: white;
+  max-width: 650px;
+  font-size: 17px;
+  line-height: 1.8;
+  text-shadow: 1px 2px 5px #442033;
+}
+
+.garden-love {
+  color: white;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .tulip-photo-section {
+    margin: 12px;
+    min-height: 450px;
+    padding: 30px 15px;
+  }
+
+  .tulip-photo-section h2 {
+    font-size: 23px;
+  }
+
+  .tulip-photo-section p {
+    font-size: 15px;
+  }
+}
+/* 🌷 REAL TULIP GARDEN BACKGROUND */
+
+.tulip-garden {
+  min-height: 500px !important;
+  padding: 50px 25px !important;
+
+  background:
+    linear-gradient(rgba(40, 15, 30, 0.25), rgba(40, 15, 30, 0.35)),
+    url("/photos/tulip-garden.jpg") !important;
+
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* Heading */
+
+.tulip-garden h2 {
+  color: white !important;
+  font-size: 30px;
+  text-shadow: 2px 2px 8px #63304b;
+}
+
+/* Paragraph */
+
+.tulip-garden p {
+  color: white !important;
+  font-size: 17px;
+  text-shadow: 1px 2px 6px #442033;
+}
+
+/* Flowers */
+
+.garden-flowers span {
+  display: inline-block;
+  font-size: 40px;
+  margin: 10px;
+
+  animation: gardenFloat 3s ease-in-out infinite;
+}
+
+@keyframes gardenFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 600px) {
+  .tulip-garden {
+    min-height: 450px !important;
+    padding: 35px 15px !important;
+  }
+
+  .tulip-garden h2 {
+    font-size: 23px;
+  }
+}
+
+/* 🌸 FLOWER EMOJIS VISIBILITY */
+
+.garden-flowers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.garden-flowers span {
+  display: inline-block;
+  font-size: 42px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(120, 30, 80, 0.2);
+}
+
+/* 🌷 KEEP BLOOMING TEXT */
+
+.garden-text {
+  display: inline-block;
+  color: #ad1457 !important;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: none !important;
+  box-shadow: 0 5px 15px rgba(120, 30, 80, 0.15);
+  margin-top: 20px;
+}
+
+/* GARDEN PARAGRAPH */
+
+.tulip-garden p {
+  display: inline-block;
+  color: #8e2455 !important;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-shadow: none !important;
+}
+/* 🌷 NATURAL FLOWER DESIGN */
+
+.garden-flowers span {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  font-size: 48px;
+  display: inline-block;
+
+  filter: drop-shadow(0 4px 5px rgba(80, 20, 50, 0.25));
+
+  animation: gardenFloat 3s ease-in-out infinite;
+}
+
+.garden-flowers span:nth-child(even) {
+  animation-delay: 0.7s;
+}
+.tulip-garden h3 {
+  color: #f8f6f8;
+}
